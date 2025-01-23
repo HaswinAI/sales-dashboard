@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sales Assistance Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <h2>AI <span class="danger">Assistant</span></h2>
+        </div>
+        <div class="close" id="close_btn">
+          <span class="material-symbols-sharp">close</span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="#chat-assistance" class="active">
+          <span class="material-symbols-sharp">chat</span>
+          <h3>Chat Assistance</h3>
+        </a>
+        <a href="#sentiment-analysis">
+          <span class="material-symbols-sharp">insights</span>
+          <h3>Sentiment & Intent Analysis</h3>
+        </a>
+        <a href="#deal-recommendation">
+          <span class="material-symbols-sharp">recommend</span>
+          <h3>Deal Recommendations</h3>
+        </a>
+        <a href="#negotiation-assistance">
+          <span class="material-symbols-sharp">support</span>
+          <h3>Negotiation Assistance</h3>
+        </a>
+        <a href="#post-call-summary">
+          <span class="material-symbols-sharp">summary</span>
+          <h3>Post Call Summary</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Dashboard</h1>
+      <div class="date">
+        <input type="date">
+      </div>
+
+      <div class="insights">
+        <div class="matrix">
+          <h2>Mutual Fund Matrix</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Fund Name</th>
+                <th>Category</th>
+                <th>Risk Level</th>
+                <th>Returns</th>
+                <th>Investment Amount</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-body">
+              <!-- Dynamic rows will be populated here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="charts">
+          <canvas id="categoryChart"></canvas>
+          <canvas id="returnsChart"></canvas>
+        </div>
+      </div>
+
+      <div id="section-content">
+        <section id="chat-assistance">
+          <h2>Chat Assistance</h2>
+          <p>No data found. Upload your code to enable this feature.</p>
+        </section>
+
+        <section id="sentiment-analysis">
+          <h2>Sentiment & Intent Analysis</h2>
+          <p>No data found. Upload your code to enable this feature.</p>
+        </section>
+
+        <section id="deal-recommendation">
+          <h2>Dynamic Deal Recommendations</h2>
+          <p>No data found. Upload your code to enable this feature.</p>
+        </section>
+
+        <section id="negotiation-assistance">
+          <h2>Negotiation Assistance</h2>
+          <p>No data found. Upload your code to enable this feature.</p>
+        </section>
+
+        <section id="post-call-summary">
+          <h2>Post Call Summary</h2>
+          <p>No data found. Upload your code to enable this feature.</p>
+        </section>
+      </div>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+        </button>
+
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+
+        <div class="profile">
+          <div class="info">
+            <p><b>Admin</b></p>
+            <p>Dashboard</p>
+          </div>
+          <div class="profile-photo">
+            <img src="./images/profile-1.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-analytics">
+        <h2>Mutual Fund Analytics</h2>
+        <div class="item">
+          <div class="icon">
+            <span class="material-symbols-sharp">analytics</span>
+          </div>
+          <div class="right">
+            <h3>Top Performing Fund</h3>
+            <h1>Equity Growth Fund</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const ctx1 = document.getElementById('categoryChart').getContext('2d');
+    const ctx2 = document.getElementById('returnsChart').getContext('2d');
+
+    const categoryChart = new Chart(ctx1, {
+      type: 'pie',
+      data: {
+        labels: ['Equity', 'Debt', 'Hybrid'],
+        datasets: [{
+          data: [40, 35, 25],
+          backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
+        }],
+      },
+    });
+
+    const returnsChart = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['Fund A', 'Fund B', 'Fund C'],
+        datasets: [{
+          label: 'Returns (%)',
+          data: [12, 15, 10],
+          backgroundColor: '#4bc0c0',
+        }],
+      },
+    });
+
+    const themeToggler = document.querySelector('.theme-toggler');
+
+    themeToggler.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme-variables');
+      themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+      themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
