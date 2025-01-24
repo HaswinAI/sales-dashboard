@@ -4,175 +4,339 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Sales Assistance Dashboard</title>
+  <title>Infosys SpringBoard intern</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <aside>
-      <div class="top">
-        <div class="logo">
-          <h2>AI <span class="danger">Assistant</span></h2>
+   <div class="container">
+      <aside>
+           
+         <div class="top">
+           <div class="logo">
+             <h2>AI <span class="danger">G.O.A.T</span> </h2>
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+          <div class="sidebar">
+
+            <a href="#" class="active">
+              <span class="material-symbols-sharp">grid_view </span>
+              <h3>Dashbord</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">person_outline </span>
+              <h3>custumers</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">insights </span>
+              <h3>Funds Analytics</h3>
+           </a>
+           <a href="chat_assistance">
+              <span class="material-symbols-sharp">Chat </span>
+              <h3>Chat Assistance</h3>
+              <span class="msg_count">3</span>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">Analytics</span>
+              <h3>Sentiment analysis</h3>
+           </a>
+           <a href="#">
+            <span class="material-symbols-sharp">recommend </span>
+            <h3>Dynamic deal recommendation</h3>
+         </a>
+           <a href="#">
+              <span class="material-symbols-sharp">task </span>
+              <h3>Negotiation Coach</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">info </span>
+              <h3>About us</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">mail</span>
+              <h3>cantact us</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout </span>
+              <h3>logout</h3>
+           </a>
+             
+
+
+          </div>
+
+      </aside>
+      <!-- --------------
+        end asid
+      -------------------- -->
+
+      <!-- --------------
+        start main part
+      --------------- -->
+
+      <main>
+           <h1>Dashbord</h1>
+
+           <div class="date">
+             <input type="date" >
+           </div>
+
+        <div class="insights">
+
+           <!-- start seling -->
+            <div class="sales">
+               <span class="material-symbols-sharp">trending_up</span>
+               <div class="middle">
+
+                 <div class="left">
+                   <h3>Gold Funds</h3>
+                   <h1>Size - 245</h1>
+                 </div>
+                  <div class="progress">
+                      <svg>
+                         <circle  r="30" cy="40" cx="40"></circle>
+                      </svg>
+                      <div class="number"><p>81%</p></div>
+                  </div>
+
+               </div>
+               <small>Aditya Brila</small>
+            </div>
+           <!-- end seling -->
+              <!-- start expenses -->
+              <div class="expenses">
+                <span class="material-symbols-sharp">local_mall</span>
+                <div class="middle">
+ 
+                  <div class="left">
+                    <h3>Digital India Fund</h3>
+                    <h1>SIZE - 4288</h1>
+                  </div>
+                   <div class="progress">
+                       <svg>
+                          <circle  r="30" cy="40" cx="40"></circle>
+                       </svg>
+                       <div class="number"><p>84%</p></div>
+                   </div>
+ 
+                </div>
+                <small>Aditya Birla</small>
+             </div>
+            <!-- end seling -->
+               <!-- start seling -->
+               <div class="income">
+                <span class="material-symbols-sharp">stacked_line_chart</span>
+                <div class="middle">
+ 
+                  <div class="left">
+                    <h3>Midcap Equity Fund</h3>
+                    <h1>Size - 34</h1>
+                  </div>
+                   <div class="progress">
+                       <svg>
+                          <circle  r="30" cy="40" cx="40"></circle>
+                       </svg>
+                       <div class="number"><p>99%</p></div>
+                   </div>
+ 
+                </div>
+                <small>Mahendra</small>
+             </div>
+            <!-- end seling -->
+
         </div>
-        <div class="close" id="close_btn">
-          <span class="material-symbols-sharp">close</span>
-        </div>
+       <!-- end insights -->
+      <div class="recent_order">
+         <h2>Recent Scheme </h2>
+         <table>
+          <thead>
+            <tr>
+              <th>Scheme Name</th>
+              <th>Minimum SIP</th>
+              <th>Expense Ratio (%)</th>
+              <th>Fund Size (Cr)</th>
+              <th>Risk Level</th>
+              <th>Rating</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aditya Birla SL Active Debt Multi-Mgr FoF-Dir Growth</td>
+              <td>100</td>
+              <td>0.27</td>
+              <td>10</td>
+              <td>3</td>
+              <td>3</td>
+              <td>Other</td>
+            </tr>
+            <tr>
+              <td>Aditya Birla SL Arbitrage Fund</td>
+              <td>1000</td>
+              <td>0.36</td>
+              <td>4288</td>
+              <td>1</td>
+              <td>3</td>
+              <td>Hybrid</td>
+            </tr>
+            <tr>
+              <td>Aditya Birla SL Asset Allocator FoF-Dir Growth</td>
+              <td>1000</td>
+              <td>0.53</td>
+              <td>157</td>
+              <td>5</td>
+              <td>3</td>
+              <td>Other</td>
+            </tr>
+            <tr>
+              <td>Aditya Birla SL Bal Bhavishya Yojna – Dir Growth</td>
+              <td>500</td>
+              <td>0.76</td>
+              <td>637</td>
+              <td>6</td>
+              <td>2</td>
+              <td>Solution Oriented</td>
+            </tr>
+          </tbody>
+        </table>
+         <a href="#">Show All</a>
       </div>
 
-      <div class="sidebar">
-        <a href="#chat-assistance" class="active">
-          <span class="material-symbols-sharp">chat</span>
-          <h3>Chat Assistance</h3>
-        </a>
-        <a href="#sentiment-analysis">
-          <span class="material-symbols-sharp">insights</span>
-          <h3>Sentiment & Intent Analysis</h3>
-        </a>
-        <a href="#deal-recommendation">
-          <span class="material-symbols-sharp">recommend</span>
-          <h3>Deal Recommendations</h3>
-        </a>
-        <a href="#negotiation-assistance">
-          <span class="material-symbols-sharp">support</span>
-          <h3>Negotiation Assistance</h3>
-        </a>
-        <a href="#post-call-summary">
-          <span class="material-symbols-sharp">summary</span>
-          <h3>Post Call Summary</h3>
-        </a>
-      </div>
-    </aside>
+      </main>
+      <!------------------
+         end main
+        ------------------->
 
-    <main>
-      <h1>Dashboard</h1>
-      <div class="date">
-        <input type="date">
-      </div>
-
-      <div class="insights">
-        <div class="matrix">
-          <h2>Mutual Fund Matrix</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Fund Name</th>
-                <th>Category</th>
-                <th>Risk Level</th>
-                <th>Returns</th>
-                <th>Investment Amount</th>
-              </tr>
-            </thead>
-            <tbody id="matrix-body">
-              <!-- Dynamic rows will be populated here -->
-            </tbody>
-          </table>
-        </div>
-        <div class="charts">
-          <canvas id="categoryChart"></canvas>
-          <canvas id="returnsChart"></canvas>
-        </div>
-      </div>
-
-      <div id="section-content">
-        <section id="chat-assistance">
-          <h2>Chat Assistance</h2>
-          <p>No data found. Upload your code to enable this feature.</p>
-        </section>
-
-        <section id="sentiment-analysis">
-          <h2>Sentiment & Intent Analysis</h2>
-          <p>No data found. Upload your code to enable this feature.</p>
-        </section>
-
-        <section id="deal-recommendation">
-          <h2>Dynamic Deal Recommendations</h2>
-          <p>No data found. Upload your code to enable this feature.</p>
-        </section>
-
-        <section id="negotiation-assistance">
-          <h2>Negotiation Assistance</h2>
-          <p>No data found. Upload your code to enable this feature.</p>
-        </section>
-
-        <section id="post-call-summary">
-          <h2>Post Call Summary</h2>
-          <p>No data found. Upload your code to enable this feature.</p>
-        </section>
-      </div>
-    </main>
-
+      <!----------------
+        start right main 
+      ---------------------->
     <div class="right">
-      <div class="top">
-        <button id="menu_bar">
-          <span class="material-symbols-sharp">menu</span>
-        </button>
 
-        <div class="theme-toggler">
-          <span class="material-symbols-sharp active">light_mode</span>
-          <span class="material-symbols-sharp">dark_mode</span>
-        </div>
+<div class="top">
+   <button id="menu_bar">
+     <span class="material-symbols-sharp">menu</span>
+   </button>
 
-        <div class="profile">
-          <div class="info">
-            <p><b>Admin</b></p>
-            <p>Dashboard</p>
-          </div>
-          <div class="profile-photo">
-            <img src="./images/profile-1.jpg" alt="Profile Photo" />
-          </div>
+   <div class="theme-toggler">
+     <span class="material-symbols-sharp active">light_mode</span>
+     <span class="material-symbols-sharp">dark_mode</span>
+   </div>
+    <div class="profile">
+       <div class="info">
+           <p><b>Haswin</b></p>
+           <p>Admin</p>
+           <small class="text-muted"></small>
+       </div>
+       <div class="profile-photo">
+         <img src="Haswin photo.jpg" alt=""/>
+       </div>
+    </div>
+</div>
+
+  <div class="recent_updates">
+     <h2>Recent Update</h2>
+   <div class="updates">
+      <div class="update">
+         <div class="profile-photo">
+            <img src="Screenshot 2025-01-23 235800.png" alt=""/>
+         </div>
+        <div class="message">
+           <p><b>Manoj</b> took an SIP on midcap equality funds </p>
         </div>
       </div>
-
-      <div class="sales-analytics">
-        <h2>Mutual Fund Analytics</h2>
-        <div class="item">
-          <div class="icon">
-            <span class="material-symbols-sharp">analytics</span>
-          </div>
-          <div class="right">
-            <h3>Top Performing Fund</h3>
-            <h1>Equity Growth Fund</h1>
-          </div>
+      <div class="update">
+        <div class="profile-photo">
+        <img src="hemanth.jpeg" alt=""/>
         </div>
+       <div class="message">
+          <p><b>Hemanth</b> took a new scheme on savings fund</p>
+       </div>
+     </div>
+     <div class="update">
+      <div class="profile-photo">
+         <img src="profile-2.jpg" alt=""/>
       </div>
+     <div class="message">
+        <p><b>Utkarsh</b> investing on Aditya Birla SL Corporate Bond Fund</p>
+     </div>
+   </div>
+  </div>
+  </div>
+
+
+   <div class="sales-analytics">
+    <main>
+      
+    </div>
+    <div class="charts">
+      <canvas id="categoryChart"></canvas>
+      <canvas id="returnsChart"></canvas>
     </div>
   </div>
-  <script>
-    const ctx1 = document.getElementById('categoryChart').getContext('2d');
-    const ctx2 = document.getElementById('returnsChart').getContext('2d');
 
-    const categoryChart = new Chart(ctx1, {
-      type: 'pie',
-      data: {
-        labels: ['Equity', 'Debt', 'Hybrid'],
-        datasets: [{
-          data: [40, 35, 25],
-          backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
-        }],
-      },
-    });
+  
+</main>
+   </div>
 
-    const returnsChart = new Chart(ctx2, {
-      type: 'bar',
-      data: {
-        labels: ['Fund A', 'Fund B', 'Fund C'],
-        datasets: [{
-          label: 'Returns (%)',
-          data: [12, 15, 10],
-          backgroundColor: '#4bc0c0',
-        }],
-      },
-    });
 
-    const themeToggler = document.querySelector('.theme-toggler');
 
-    themeToggler.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme-variables');
-      themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-      themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-    });
-  </script>
+
+
+
+
+
+
+
+  <div class="/chat_assistance" >
+    {% extends "layout.html" %}
+
+{% block content %}
+<h2>Chat Assistance</h2>
+<form method="POST" action="/chatbot">
+    <label for="user_message">Your Message:</label>
+    <input type="text" name="user_message" id="user_message" required>
+    <button type="submit">Send</button>
+</form>
+{% if user_message and assistant_message %}
+    <div class="chat">
+        <p><strong>You:</strong> {{ user_message }}</p>
+        <p><strong>Assistant:</strong> {{ assistant_message }}</p>
+    </div>
+{% elif error %}
+    <div class="error">
+        <p>{{ error }}</p>
+    </div>
+{% endif %}
+{% endblock %}
+
+
+  </div> 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
 </body>
 </html>
